@@ -29,8 +29,8 @@ def track_time():
             stats[today] = stats.get(today, 0) + INTERVAL
             save_stats(stats)
             start_time = time.time()
-        except KeyboardInterrupt:
-            pass
+    except KeyboardInterrupt:
+        pass
 
 if __name__ == "__main__":
     track_time()
